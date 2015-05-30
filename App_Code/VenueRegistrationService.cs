@@ -5,12 +5,11 @@ using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
 
-// NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "VenueRegistrationService" in code, svc and config file together.
 public class VenueRegistrationService : IVenueRegistrationService
 {
     ShowTrackerEntities ste = new ShowTrackerEntities();
 
-    public bool RegisteVenue(VanueLite v)
+    public bool RegisterVenue(VenueLite v)
     {
         bool result = true;
         try

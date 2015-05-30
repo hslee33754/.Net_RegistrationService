@@ -10,14 +10,14 @@ using System.Text;
 public interface IVenueRegistrationService
 {
 	[OperationContract]
-	bool RegisteVenue(VanueLite v);
+    bool RegisterVenue(VenueLite v);
 
     [OperationContract]
     int VenueLogin(string userName, string password);
 }
 
 [DataContract]
-public class VanueLite
+public class VenueLite
 {
     [DataMember]
     public string VenueName{ set; get; }
